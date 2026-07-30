@@ -1,1 +1,28 @@
 # FDTD-PIC-Integration
+
+=====================================================
+
+## DESCRIPTION
+This script couples an Alternating-Direction-Implicit FDTD (ADI-FDTD) electromagnetic solver with a Particle-In-Cell (PIC) particle mover to model plasma generation and wave-electron interaction in a HEMT two-dimensional electron gas (2DEG) channel. It checks that the coupled EM-MC model reproduces the expected current density in the channel. 
+
+## Notes on this version:
+1. The 2DEG is presented with a interdigitated gate. The gate is designed for 300 GHz frequency. The period needs to be modified once the frequency is changed.
+2. The macro-particle scaling factor (MF) definition was revised to be based on particle behavior at the moment of injection.
+
+=====================================================
+
+## HOW TO RUN THE FILE ##
+1. Download these files and put them in the same folder: (a) Faiyaz_SB_MC_ADI_PIC.m , (b) Faiyaz_sb_ADI_FDTD_PIC and (c) Faiyaz_sb_ParticleView_plasma_velosc.mat, and (d) MC_Current_1p0e5_dx_10nm_L_5um_delV_200_ttdynamic_CN20.mat
+2. Make a new subfolder with the "Faiyaz_sb_ADI_FDTD_PIC.m" file. 
+3. Run it and copy the last '.mat' file and paste it into the main folder. Rename it and make sure you load this file with the proper name that you have assigned.
+4. Now you can run the main "Faiyaz_sb_ADI_FDTD_PIC.m" file and it will generate the outputs. You will be able to see some runtime plots.
+5. After the simulation finishes, you can load those dumped files and plot the parameters necessary.
+6. The "Faiyaz_sb_ParticleView_plasma_velosc.m" has the necessary codes to see AC/DC velocity oscillations and plasma waves.
+7. You can change the device or the parameters according to your needs. They are defined outside the main update loops. If you choose to update Courant Number (CN), change it in both (a) Faiyaz_SB_MC_ADI_PIC.m, and (b) Faiyaz_sb_ADI_FDTD_PIC codes.
+
+=====================================================
+## To understand the workflow and the theory, you can read the following paper,
+
+M. F. B. Hassan and S. Bhardwaj, "Efficiency and Error Optimizations in ADI-FDTD Particle-In-Cell Model for Wave-Particle Interactions and Slow-wave Effects in THz Gap," in Proc. IEEE International Symposium on Antennas and Propagation and USNC-URSI Radio Science Meeting (AP-S/URSI), Detroit, MI, USA, 2026.
+
+=====================================================
