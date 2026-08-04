@@ -1,6 +1,10 @@
 %% Particle viewer plots
 % This code will plot the plasma wave generation and both AC & DC velocity 
 % oscillations of the particles
+% Copyright (c) 2026 Md Faiyaz Bin Hassan and Dr. Shubhendu Bhardwaj
+% 
+% This file is part of the ADI-FDTD Particle-In-Cell modeling software.
+% It is released under the MIT License. See the LICENSE file for details.
 
 
 figure;
