@@ -6,6 +6,11 @@
 % Advanced Wireless and EM Research Lab, University of Nebraska-Lincoln
 % Advisor: Prof. Shubhendu Bhardwaj
 %
+% Copyright (c) 2026 Md Faiyaz Bin Hassan and Dr. Shubhendu Bhardwaj
+% 
+% This file is part of the ADI-FDTD Particle-In-Cell modeling software.
+% It is released under the MIT License. See the LICENSE file for details.
+%
 %% If you use or adapt any version of this code, please cite:
 % M. F. B. Hassan and S. Bhardwaj, "Efficiency and Error Optimizations in
 % ADI-FDTD Particle-In-Cell Model for Wave-Particle Interactions and 
