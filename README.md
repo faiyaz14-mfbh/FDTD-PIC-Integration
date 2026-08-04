@@ -12,13 +12,13 @@ This script couples an Alternating-Direction-Implicit FDTD (ADI-FDTD) electromag
 =====================================================
 
 ## HOW TO RUN THE FILE ##
-1. Download these files and put them in the same folder: (a) Faiyaz_SB_MC_ADI_PIC.m , (b) Faiyaz_sb_ADI_FDTD_PIC and (c) Faiyaz_sb_ParticleView_plasma_velosc.mat, and (d) MC_Current_1p0e5_dx_10nm_L_5um_delV_200_ttdynamic_CN20.mat
-2. Make a new subfolder with the "Faiyaz_sb_ADI_FDTD_PIC.m" file. 
+1. Download these files and put them in the same folder: (a) MC_Generator_ADI_PIC.m , (b) Main_ADI_FDTD_PIC and (c) ParticleView_plasma_velosc.mat, and (d) MC_Current_1p0e5_dx_10nm_L_5um_delV_200_ttdynamic_CN20.mat
+2. Make a new subfolder with the "MC_Generator_ADI_PIC.m" file. 
 3. Run it and copy the last '.mat' file and paste it into the main folder. Rename it and make sure you load this file with the proper name that you have assigned.
-4. Now you can run the main "Faiyaz_sb_ADI_FDTD_PIC.m" file and it will generate the outputs. You will be able to see some runtime plots.
+4. Now you can run the main "Main_ADI_FDTD_PIC.m" file and it will generate the outputs. You will be able to see some runtime plots.
 5. After the simulation finishes, you can load those dumped files and plot the parameters necessary.
-6. The "Faiyaz_sb_ParticleView_plasma_velosc.m" has the necessary codes to see AC/DC velocity oscillations and plasma waves.
-7. You can change the device or the parameters according to your needs. They are defined outside the main update loops. If you choose to update Courant Number (CN), change it in both (a) Faiyaz_SB_MC_ADI_PIC.m, and (b) Faiyaz_sb_ADI_FDTD_PIC codes.
+6. The "ParticleView_plasma_velosc.m" has the necessary codes to see AC/DC velocity oscillations and plasma waves.
+7. You can change the device or the parameters according to your needs. They are defined outside the main update loops. If you choose to update Courant Number (CN), change it in both (a) MC_Generator_ADI_PIC.m and, (b) Main_ADI_FDTD_PIC codes.
 
 =====================================================
 ## To understand the workflow and the theory, you can read the following paper,
